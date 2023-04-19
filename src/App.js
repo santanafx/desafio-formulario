@@ -1,23 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+const perguntas = [
+  {
+    pergunta: 'Qual método é utilizado para criar componentes?',
+    options: [
+      'React.makeComponent()',
+      'React.createComponent()',
+      'React.createElement()',
+    ],
+    resposta: 'React.createElement()',
+    id: 'p1',
+  },
+  {
+    pergunta: 'Como importamos um componente externo?',
+    options: [
+      'import Component from "./Component"',
+      'require("./Component")',
+      'import "./Component"',
+    ],
+    resposta: 'import Component from "./Component"',
+    id: 'p2',
+  },
+  {
+    pergunta: 'Qual hook não é nativo?',
+    options: ['useEffect()', 'useFetch()', 'useCallback()'],
+    resposta: 'useFetch()',
+    id: 'p3',
+  },
+  {
+    pergunta: 'Qual palavra deve ser utilizada para criarmos um hook?',
+    options: ['set', 'get', 'use'],
+    resposta: 'use',
+    id: 'p4',
+  },
+];
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
     </div>
   );
 }
